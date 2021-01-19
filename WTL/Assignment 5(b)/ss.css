@@ -1,0 +1,40 @@
+.converter{
+	text-align: center;
+	width: 800px;
+	height: auto;
+	margin: 20px;
+	padding: 10px;
+	border: black solid 5px;
+	border-radius: 5px;
+	background-color: orange;
+    color: white;
+	}
+input[type=number]{
+		height: 25px;
+		width: 50%;
+		text-align: right;
+		box-sizing: border-box;
+		margin: 5px;
+	}
+	input[type=number]:focus {
+    border: 3px solid #555;
+}
+	label{
+		padding: 12px 12px 12px 0;
+    display: inline-block;
+    width: 100px;
+    text-align: left;
+    font-weight: bold;
+	}
+	
+	.det{
+		font-size:14px;
+		padding: 12px 12px 12px 0;
+		text-align:center;
+	}
+	
+	.title-head{
+	font-family:monospace;
+	letter-spacing:2px;
+	}
+
