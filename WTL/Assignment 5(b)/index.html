@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="angular.min.js"></script>
+    <link href="ss.css" type="text/css" rel="stylesheet">
+
+	<script>
+
+	var app=angular.module("CurConvert",[]);
+	app.controller("CurCtrl" ,function($scope)
+		{
+			$scope.rs=0;
+			$scope.dollar=0;
+		});
+
+	</script>
+
+</head>
+<body>
+<center>
+<h3> WTL Assignment 5(b): Web App using Angular JS </h3> <br>
+</center>
+<div class="det">
+<pre>
+Name : Sudesh Pawar
+Serial No. : 24
+Class: TE-1
+</pre>
+</div>
+<div ng-app="CurConvert" ng-controller="CurCtrl">
+<div class="converter">
+
+<form>
+<h1 class="title-head">Currency Converter WebApp</h1>
+<div>
+<label>Rs</label>
+<input type="number" ng-model="rs" placeholder="Amount in RS" ng-keyup="dollar=rs/ratio">
+</div>
+<div>
+<label>Dollar</label>
+	<input type="number" ng-model="dollar" placeholder="Anount in $$" ng-keyup="rs=dollar*ratio">
+</div>
+
+<div>
+<label>Exchange ratio(USD to INR)</label>
+	<input type="number" ng-model="ratio" placeholder="1 USD = ? INR">
+</div>
+
+</form>
+</div>
+</div>
+</body>
+</html>
