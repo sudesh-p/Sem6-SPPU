@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html ng-app="bmiApp">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BMI Calculator</title>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+</head>
+<body data-ng-controller="bmiController">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="jumbotron">
+          <h3 class="text-center">BMI Calculator</h3> 
+          <h4 class="text-center">by Kunal Yeola</h4>
+        </div>
+        <form role="form"> 
+          <div id="metric">
+            <div class="form-group">
+              <label for="weight_kg">Weight (kg):</label>
+              <input type="number" ng-model="weight_kg" 
+              id="weight_kg"
+              placeholder="weight in kg" class="form-control">    
+            </div>
+            
+            <div class="form-group">
+              <label for="height_cm">Height (cm):</label>
+              <input type="number" ng-model="height_cm" 
+              id="height_cm"
+              placeholder="height in cm" class="form-control">    
+            </div>
+            
+          </div>
+        </form>
+        
+        <div class="well text-center">
+          <h3 class="text-muted">Calculated BMI</h3>
+          <h2><span class="label label-{{catClass}}" title="{{catTitle}}">{{bmi | number:1}}</span></h2>
+          <h4 class="text-muted">{{catTitle}}</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  <script src="http://code.angularjs.org/1.2.13/angular.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
