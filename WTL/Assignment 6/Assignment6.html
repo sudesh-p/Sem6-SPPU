@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Assignment 6</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+<div class="jumbotron">
+    <h1 class="text-center">Calculator</h1>
+    <h3 class="text-center">Assignment 6: Design a Web App using Bootstrap</h3>
+	<h3 class="text-center">Name: Sudesh Pawar</h3>
+	<h4 class="text-center">Roll No: 24</h4>
+</div>
+
+<div class="container">
+
+    <div class="row">
+
+        <!-- LHS -->
+        <div class="col-lg-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Calculator</h3>
+                </div>
+
+                <div class="panel-body">
+                    <button id="button-7" class="btn btn-primary number" value="7"><h1>7</h1></button>
+                    <button id="button-8" class="btn btn-primary number" value="8"><h1>8</h1></button>
+                    <button id="button-9" class="btn btn-primary number" value="9"><h1>9</h1></button>
+                    <button id="button-plus" class="btn btn-danger operator" value="plus"><h1>+</h1></button>
+                    <br><br>
+                    <button id="button-4" class="btn btn-primary number" value="4"><h1>4</h1></button>
+                    <button id="button-5" class="btn btn-primary number" value="5"><h1>5</h1></button>
+                    <button id="button-6" class="btn btn-primary number" value="6"><h1>6</h1></button>
+                    <button id="button-minus" class="btn btn-danger operator" value="minus"><h1>&minus;</h1></button>
+                    <br><br>
+                    <button id="button-1" class="btn btn-primary number" value="1"><h1>1</h1></button>
+                    <button id="button-2" class="btn btn-primary number" value="2"><h1>2</h1></button>
+                    <button id="button-3" class="btn btn-primary number" value="3"><h1>3</h1></button>
+                    <button id="button-multiply" class="btn btn-danger operator" value="times"><h1>&times;</h1></button>
+                    <br><br>
+                    <button id="button-0" class="btn btn-primary number" value="0"><h1>0</h1></button>
+                    <button id="button-divide" class="btn btn-danger operator" value="divide"><h1>&divide;</h1></button>
+                    <button id="button-power" class="btn btn-danger operator" value="power"><h1>^</h1></button>
+                    <button id="button-equal" class="btn btn-success equal" value="equals"><h1>=</h1></button>
+                    <br><br>
+                    <button id="button-clear" class="btn btn-default clear" value="clear"><h1>Clear</h1></button>
+                </div>
+
+            </div>
+        </div>
+		
+		<!--RHS -->
+        <div class="col-lg-6">
+        <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Your Result</h3>
+                </div>
+                <div class="panel-body">
+                    <h1 id="first-number"></h1>
+                    <h1 id="operator"></h1>
+                    <h1 id="second-number"></h1>
+                    <h1 id="result"></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+var num1 = -1;
+var num2 = -1;
+var number = 0;
+var operator = -1;
+
+// on click 
+$(".number").on("click", function(){
+console.log("Number Clicked");
+console.log("Operator is " + operator);
+    if (operator != -1) {
+        var digit = $(this).attr("value");
+        number = number * 10 + parseInt(digit);
+        console.log("the number is " + number);
+        console.log(digit);
+        num2 = number;
+        console.log(num2);
+        $("#second-number").append(digit);
+ }
+    else {
+        var digit = $(this).attr("value");
+        number = number * 10 + parseInt(digit);
+        console.log("the number is " + number);
+        console.log(digit);
+        num1 = number;
+        console.log(num1);
+        $("#first-number").append(digit);
+    }        
+});
+
+$(".operator").on("click", function(){
+ console.log("Operator Clicked");
+number = 0;
+var op = $(this).attr("value");
+console.log(op);
+    switch (op) {
+    case "plus":
+    operator = "+";
+    console.log(operator);
+        $("#operator").append(operator);
+    break;
+    case "minus":
+    operator = "-";
+    console.log(operator);
+        $("#operator").append(operator);
+    break;
+    case "divide":
+    operator = "/";
+    console.log(operator);
+        $("#operator").append(operator);
+    break;
+    case "times":
+    operator = "*";
+    console.log(operator);
+        $("#operator").append(operator);
+    break;
+    case "power":
+    operator = "^";
+    console.log(operator);
+        $("#operator").append(operator);
+    break;
+}
+});
+
+$(".clear").on("click", function()
+{
+ console.log("Clear Clicked");
+var cleared = $(this).attr("value");
+clear = cleared;
+console.log(clear);
+$("#operator").html("");
+$("#result").html("");
+$("#first-number").html("");
+$("#second-number").html("");
+num1 = -1;
+num2 = -1;
+number = 0;
+operator = -1;
+});
+
+$(".equal").on("click", function()
+{
+ console.log("Equals Clicked");
+var results = eval(num1 + operator + num2);
+console.log("num1: " + num1 + "operator: " + operator + "num2: " + num2);
+console.log(results);
+$("#operator").html("");
+$("#first-number").html("");
+$("#second-number").html("");
+$("#result").html(results);
+});
+console.log(num1);
+console.log(num2);
+console.log(operator);
+});
+</script>
+</body>
+</html>
