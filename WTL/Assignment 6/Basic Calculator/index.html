@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>Calculator by Sudesh Pawar</title>
+<!--bootstrap CDN Stylesheet--> 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<!--Google Fonts style -->
+<link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
+
+<!--Local Stylesheet--> 
+<link rel="stylesheet" href="styles.css">
+
+<!--FontAwesome kit--> 
+<script src="https://kit.fontawesome.com/123926b258.js" crossorigin="anonymous"></script>
+
+<!--Bootstrap Javascript -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+    function dis(val) 
+        { 
+        document.getElementById("result").value+=val 
+        } 
+
+    function solve() 
+        { 
+        let x = document.getElementById("result").value 
+        let y = eval(x) 
+        document.getElementById("result").value = y 
+        } 
+
+    function clr() 
+        { 
+        document.getElementById("result").value = "" 
+        }
+</script>
+
+</head>
+</head>
+<body>
+
+<center>
+    <h1 style="color:#ffffff">Assignment 6 : Bootstrap</h1>
+    <hr>
+    <font style="color:#ffffff">
+        Name: Sudesh Pawar<br>
+        Class: TE Comp 1 <br>
+        Roll No: 24 <br>
+    </font>
+</center>
+<form class="" action="" method="post" enctype="text/plain">
+<br>
+<section id="calculator">
+<div class="calc">
+<input type="text" id="result"/>
+    <div class="row">
+        <div class="col-sm-1 first">
+            <input type="button" class="addition calc-btn" value="+" onClick="dis('+')"/><br>
+            <input type="button" class="subtraction calc-btn" value="-" onClick="dis('-')"/><br>
+            <input type="button" class="multiplication calc-btn" value="*" onClick="dis('*')"/><br>
+            <input type="button" class="division calc-btn" value="/" onClick="dis('/')"/>
+        </div>
+        <div class="col-sm-1 second">
+            <input type="button" class="one calc-btn" value="1" onClick="dis('1')"/><br>
+            <input type="button" class="four calc-btn" value="4" onClick="dis('4')"/><br>
+            <input type="button" class="seven calc-btn" value="7" onClick="dis('7')"/>
+        </div>
+        <div class="col-sm-1 third">
+            <input type="button" class="two calc-btn" value="2" onClick="dis('2')"/><br>
+            <input type="button" class="five calc-btn" value="5" onClick="dis('5')"/><br>
+            <input type="button" class="eight calc-btn" value="8" onClick="dis('8')"/><br>
+            <input type="button" class="zero calc-btn" value="0" onClick="dis('0')"/>
+        </div>
+        <div class="col-sm-1 fourth">
+            <input type="button" class="three calc-btn" value="3" onClick="dis('3')"/><br>
+            <input type="button" class="six calc-btn" value="6" onClick="dis('6')"/><br>
+            <input type="button" class="nine calc-btn" value="9" onClick="dis('9')"/><br>
+        </div>
+        <div class="col-sm-1 fifth">
+            <input type="button" class="clear calc-btn tall" value="C" onClick="clr()"/><br>
+            <input type="button" class="eqaulity calc-btn tall" value="=" onClick="solve()"/>
+        </div>
+    </div>
+</div>
+</section>
+</form>
+
+
+</body>
+</html>
