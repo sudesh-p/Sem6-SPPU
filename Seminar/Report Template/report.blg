@@ -1,0 +1,51 @@
+This is BibTeX, Version 0.99d (MiKTeX 2.9.7350 64-bit)
+Capacity: max_strings=4000, hash_size=5000, hash_prime=4253
+The top-level auxiliary file: report.aux
+The style file: ieeetr.bst
+Database file #1: repcite.bib
+Warning--I didn't find a database entry for "pap2"
+Warning--I didn't find a database entry for "pap5"
+Warning--I didn't find a database entry for "pap1"
+Warning--empty year in nvs
+You've used 15 entries,
+            1876 wiz_defined-function locations,
+            556 strings with 5825 characters,
+and the built_in function-call counts, 3886 in all, are:
+= -- 385
+> -- 110
+< -- 0
++ -- 44
+- -- 29
+* -- 247
+:= -- 537
+add.period$ -- 15
+call.type$ -- 15
+change.case$ -- 15
+chr.to.int$ -- 0
+cite$ -- 16
+duplicate$ -- 221
+empty$ -- 396
+format.name$ -- 29
+if$ -- 976
+int.to.chr$ -- 0
+int.to.str$ -- 15
+missing$ -- 15
+newline$ -- 48
+num.names$ -- 15
+pop$ -- 51
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 147
+stack$ -- 0
+substring$ -- 276
+swap$ -- 93
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 1
+while$ -- 33
+width$ -- 17
+write$ -- 139
+(There were 4 warnings)
