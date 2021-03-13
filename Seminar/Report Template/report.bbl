@@ -1,0 +1,75 @@
+\begin{thebibliography}{10}
+
+\bibitem{alic}
+M.~S. Ali~Isina, Cem~Direkoglu, ``Review of mri based brain tumor image
+  segmentation using deep learning methods,'' {\em Procedia Computer Science},
+  vol.~102, pp.~317--324, 2016.
+
+\bibitem{nellyg}
+P.~S. Nelly~Gordillo, Eduard~Montseny, ``State of the art survey on mri brain
+  tumor segmentation,'' {\em Magnetic Resonance Imaging}, vol.~31,
+  pp.~1426--1438, 2013.
+
+\bibitem{ayun}
+A.~F. Muda, N.~M. Saad, S.~A. R.~A. Bakar, S.~Muda, and A.~A. R., ``Brain
+  lesion segmentation using fuzzy c-means on diffusion-weighted imaging,,''
+  {\em ARP Journal of Engineering and Applied Sciences}, vol.~10, no.~3,
+  pp.~1426--1438, 2015.
+
+\bibitem{chema}
+C.~Rao, P.~Naganjaneyulu, and K.~Prasad, ``Brain tumor detection and
+  segmentation using conditional random field,'' in {\em IEEE 7th International
+  Advance Computing Conference}, pp.~807--810, 2017.
+
+\bibitem{atiq}
+A.~Islam, ``Multi-fractal texture estimation for detection and segmentation of
+  brain tumors,'' {\em IEEE}, 2013.
+
+\bibitem{meiy}
+M.~Huang, ``Brain tumor segmentation based on local independent projection
+  based classification,'' {\em IEEE Transactions on Biomedical Engineering},
+  2013.
+
+\bibitem{bjoe}
+B.~H. Menze, ``The multimodal brain tumor image segmentation benchmark
+  (brats)”,,'' {\em IEEE Transactions on Medical Imaging}, 2014.
+
+\bibitem{smsl}
+S.~Huda, ``A hybrid feature selection with ensemble classification for
+  imbalanced healthcare data: A case study for brain tumor diagnosis,'' {\em
+  IEEE Access}, vol.~4, 2017.
+
+\bibitem{sergio}
+S.~Pereira, ``Brain tumor segmentation using convolutional neural networks in
+  mri images,'' {\em IEEE Transactions on Medical Imaging}, 2016.
+
+\bibitem{jsit}
+J.~Seetha and S.~S. Raja, ``Brain tumor classification using convolutional
+  neural networks,'' {\em Biomedical \& Pharmacology Journal}, vol.~11, no.~3,
+  pp.~1457--1461, 2018.
+
+\bibitem{nvs}
+N.~V. Shree and T.~N.~R. Kumar, ``Identification and classification of brain
+  tumor mri images with feature extraction using dwt and probabilistic neural
+  network,'' {\em Springer, Brain Informatics}, pp.~23--30.
+
+\bibitem{zhen}
+Z.~Tang, A.~Sahar, Y.~Pew-Thian, and S.~Dinggang, ``Multi-atlas segmentation of
+  mr tumor brain images using low-rank based image recovery,'' {\em IEEE Trans
+  Med Imaging}, vol.~37, no.~10, pp.~2224--2235, 2018.
+
+\bibitem{balj}
+B.~Singh and P.~Aggarwal, ``Detection of brain tumor using modified mean-shift
+  based fuzzy c-mean segmentation from mri images,'' {\em IEEE}, pp.~536--545,
+  2017.
+
+\bibitem{gari}
+G.~Singh and D.~M. Ansari, ``Efficient detection of brain tumor from mris using
+  k-means segmentation and normalized histogram,'' {\em IEEE}, 2016.
+
+\bibitem{grc}
+G.~R. Chandra and D.~K. R.~H. Rao, ``Tumor detection in brain using genetic
+  algorithm,'' in {\em Elsevier, 7th International Conference on Communication,
+  Computing and Virtualization}, pp.~449--457, 2016.
+
+\end{thebibliography}
