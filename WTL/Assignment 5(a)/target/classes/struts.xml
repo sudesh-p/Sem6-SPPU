@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <constant name="struts.enable.DynamicMethodInvocation" value="false"/>
+    <constant name="struts.devMode" value="true"/>
+
+    <package name="default" namespace="/" extends="struts-default">
+        <default-action-ref name="index"/>
+
+        <action name="Welcome">
+            <result>/WEB-INF/index.jsp</result>
+        </action>
+
+        <action name="Success" class="org.example.example.Success">
+            <result>/WEB-INF/success.jsp</result>
+        </action>
+
+        <action name="Hello" class="org.example.example.HelloWorld">
+            <result name="success" type="redirectAction">
+                <param name="actionName">Success</param>
+            </result>
+            <result name="error">/WEB-INF/index.jsp</result>
+        </action>
+
+        <action name="index">
+            <result type="redirectAction">
+                <param name="actionName">Welcome</param>
+            </result>
+        </action>
+
+    </package>
+</struts>
