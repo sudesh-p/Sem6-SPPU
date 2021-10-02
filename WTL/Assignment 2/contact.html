@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Food Diary-contact</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" />
+	<link href="css/css.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <!-- Top box -->
+            <!-- Logo & Site Name -->
+            <div class="placeholder">
+                <div class="parallax-window" data-parallax="scroll" data-image-src="img/simple-house-01.jpg">
+                    <img src="img/ds.jpg">
+                    <div class="tm-header">
+                        <div class="row tm-header-inner">
+                            <div class="col-md-6 col-12">
+                                <img src="img/simple-house-logo.png" alt="Logo" class="tm-site-logo" /> 
+                                <div class="tm-site-text-box">
+                                    <h1 class="tm-site-title">Food Diary</h1>
+                                    <h6 class="tm-site-description">See Any Things You Want</h6>	
+                                </div>
+                            </div>
+                            <nav class="col-md-6 col-12 tm-nav">
+                                <ul class="tm-nav-ul">
+                                    <li class="tm-nav-li"><a href="index.html" class="tm-nav-link">Home</a></li>
+                                    <li class="tm-nav-li"><a href="contact.html" class="tm-nav-link">Contact</a></li>
+                                </ul>
+                            </nav>	
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <main>
+                <header class="row tm-welcome-section">
+                    <h2 class="col-12 text-center tm-section-title">Contact US</h2>
+                    <p class="col-12 text-center"></p>
+                </header>
+    
+                <div class="tm-container-inner-2 tm-contact-section">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <form action="" method="POST" name="myform" class="tm-contact-form" onsubmit="return validateForm()">
+                                <div class="form-group">
+                                  <input type="text" name="name" class="form-control" placeholder="Name" />
+                                </div>
+                                
+                                <div class="form-group">
+                                  <input type="text" name="email" class="form-control" placeholder="Email" />
+                                </div>
+                    
+                                <div class="form-group">
+                                  <textarea rows="5" name="message" class="form-control" placeholder="Message"></textarea>
+                                </div>
+                        
+                                <div class="form-group tm-d-flex">
+                                  <button type="submit" class="tm-btn tm-btn-success tm-btn-right">
+                                    Send
+                                  </button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="tm-address-box">
+                                <h4 class="tm-info-title tm-text-success">Our Address</h4>
+                                <address>
+                                    Plot NO. 7 B, Vikas Colony, Jamner Road, Bhusawal, Jalgaon, Maharastra.
+                                </address>
+                                <a href="tel:9370227071" class="tm-contact-link">
+                                    Phone No.:
+                                    +91 9370227071
+                                </a>
+                                <a href="mailto:chaudharishreyas21@gmail.com" class="tm-contact-link">
+                                    Email Address:
+                                    chaudharishreyas21@gmail.com
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tm-container-inner-2 tm-map-section">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="tm-map">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d13561.190853577027!2d75.77942544938053!3d21.022554531036693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x3bd9a65cd1ba0d1d%3A0x44e15f5adf4f60b6!2sShri%20Ram%20Housing%20Society%2C%20Bhusawal%2C%20Maharashtra%20425307!3m2!1d21.0258136!2d75.7802562!5e0!3m2!1sen!2sin!4v1614418357392!5m2!1sen!2sin" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer class="tm-footer text-center">
+                    <p>Created by Shreyas Chaudhari.</p>
+                </footer>
+            </main>
+            <script src="js/validation.js"></script>
+</body>
+</html>
